@@ -268,7 +268,7 @@
         border: 1px solid #ccc;
         padding: 10px;
         border-radius: 5px;
-        width: 40%;
+        width: 46%;
         margin: 0 auto; /* Center the input field horizontally */
         margin-bottom: 5px;
         transition: border-color 0.3s ease-in-out;
@@ -289,7 +289,7 @@
 
         /* Wide of Inputs */
         #register-popup input[type="password"] {
-            width: 40%;
+            width: 45%;
             margin: 0 auto; /* Center the input field horizontally */
             margin-bottom: 5px;
         }
@@ -497,65 +497,65 @@
     </div>
 
     <!-- Registration Form Popup -->
-<div id="register-popup" class="popup">
-    <div class="popup-content">
-        <span class="close" id="close-register-popup">&times;</span>
-        <h2>Registration Form</h2>
-        <div class="popup-message">
-            <p>Create a new account to book appointments and access other features.</p>
-        </div>
-        <div class="scrollable-form">
-            <div class="scrollable-content">
-                <form id="register-form">
-                    <div class="text-inside-form">
-                        <p>Personal Information</p>
-                    </div>
-                    <div class="input-container">
-                        <input style="margin-right: 5px;" type="text" placeholder="Last Name" id="last-name" name="last-name" required>
-                        <input style="margin-left: 0px;" type="text" placeholder="First Name" id="first-name" name="first-name" required>
-                    </div>
-                    <div class="input-container">
-                        <input style="margin-right: 5px;" type="text" placeholder="Middle Name" id="middle-name" name="middle-name" required>
-                        <input style="margin-left: 0px;" type="date" id="date-of-birth" name="date-of-birth" required>
-                    </div>
-                    <div class="input-container">
-                        <select style="margin-right: 5px;" class="box" id="select-sex" name="select-sex" required>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                        <select style="margin-left: 0px;" class="box" id="select-civil-status" name="select-civil-status" required>
-                            <option value="single">Single</option>
-                            <option value="married">Married</option>
-                            <option value="divorced">Divorced</option>
-                            <option value="widowed">Widowed</option>
-                        </select>
-                    </div>
-                    <div class="text-inside-form">
-                        <p>Contact Information</p>
-                    </div>
-                    <div class="input-container">
-                        <input style="margin-right: 5px;" type="email" placeholder="Email" id="email" name="email" required>
-                        <input style="margin-left: 0px;" type="tel" placeholder="Phone Number" id="phone_number" name="phone_number" required>
-                    </div>
-                    <div class="text-inside-form">
-                        <p>Account Information</p>
-                    </div>
-                    <div class="input-container">
-                        <input style="width: 40%" type="text" placeholder="Username" id="username" name="username" required>
-                    </div>
-                    <div class="input-container">
-                        <input type="password" placeholder="Password" id="password" name="password" required>
-                    </div>
-                    <div class="input-container">
-                        <input type="password" placeholder="Confirm Password" id="confirm_password" name="confirm_password" required>
-                    </div>
-                </form>
+    <div id="register-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-register-popup">&times;</span>
+            <h2>Registration Form</h2>
+            <div class="popup-message">
+                <p>Create a new account to book appointments and access other features.</p>
             </div>
+            <div class="scrollable-form">
+                <div class="scrollable-content">
+                    <form id="register-form">
+                        <div class="text-inside-form">
+                            <p>Personal Information</p>
+                        </div>
+                        <div class="input-container">
+                            <input style="margin-right: 5px;" type="text" placeholder="Last Name" id="last-name" name="last-name" required>
+                            <input style="margin-left: 0px;" type="text" placeholder="First Name" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="input-container">
+                            <input style="margin-right: 5px;" type="text" placeholder="Middle Name" id="middle-name" name="middle-name" required>
+                            <input style="margin-left: 0px;" type="date" placeholder="Date of Birth" id="date-of-birth" name="date-of-birth" required>
+                        </div>
+                        <div class="input-container">
+                            <select style="margin-right: 5px;" class="box" id="select-sex" name="select-sex" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <select style="margin-left: 0px;" class="box" id="select-civil-status" name="select-civil-status" required>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="divorced">Divorced</option>
+                                <option value="widowed">Widowed</option>
+                            </select>
+                        </div>
+                        <div class="text-inside-form">
+                            <p>Contact Information</p>
+                        </div>
+                        <div class="input-container">
+                            <input style="margin-right: 5px;" type="email" placeholder="Email" id="email" name="email" required>
+                            <input style="margin-left: 0px;" type="tel" placeholder="Phone Number" id="phone_number" name="phone_number" required>
+                        </div>
+                        <div class="text-inside-form">
+                            <p>Account Information</p>
+                        </div>
+                        <div class="input-container">
+                            <input style="width: 45%" type="text" placeholder="Username" id="username" name="username" required>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Password" id="password" name="password" required>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Confirm Password" id="confirm_password" name="confirm_password" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button type="button" id="register-button" class="login-button">Register</button>
+            <p>Already have an account? <a href="#" id="login-link">Login</a></p>
         </div>
-        <button type="button" id="register-button" class="login-button">Register</button>
-        <p>Already have an account? <a href="#" id="login-link">Login</a></p>
     </div>
-</div>
 
 
     <section class="content">
