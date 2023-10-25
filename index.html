@@ -267,7 +267,7 @@
                 border: 1px solid #ccc;
                 padding: 10px;
                 border-radius: 5px;
-                width: 46%;
+                width: 87%;
                 margin: 0 auto; /* Center the input field horizontally */
                 margin-bottom: 5px;
                 transition: border-color 0.3s ease-in-out;
@@ -279,14 +279,14 @@
         #register-popup input[type="email"],
         #register-popup input[type="tel"],
         #register-popup input[type="password"] {
-            width: 40%;
+            width: 80%;
             margin: 0 auto; /* Center the input field horizontally */
             margin-bottom: 5px;
         }
 
         /* Wide of Inputs */
         #register-popup input[type="password"] {
-            width: 45%;
+            width: 80%;
             margin: 0 auto; /* Center the input field horizontally */
             margin-bottom: 5px;
         }
@@ -540,21 +540,27 @@
                                         <p>Personal Information</p>
                                     </div>
                                     <div class="input-container">
-                                        <input style="margin-right: 5px;" type="text" placeholder="Last Name" id="last-name" name="last-name" required>
-                                        <input style="margin-left: 0px;" type="text" placeholder="First Name" id="first-name" name="first-name" required>
+                                        <input type="text" placeholder="Last Name" id="last-name" name="last-name" required>
                                     </div>
                                     <div class="input-container">
-                                        <input style="margin-right: 5px;" type="text" placeholder="Middle Name" id="middle-name" name="middle-name" required>
-                                        <input style="margin-left: 0px;" type="text" placeholder="Date of Birth" id="date-of-birth" name="date-of-birth" readonly required>
+                                        <input type="text" placeholder="First Name" id="first-name" name="first-name" required>
                                     </div>
                                     <div class="input-container">
-                                        <select style="margin-right: 5px;" class="box" id="select-sex" name="select-sex" required>
-                                            <option value="" disabled selected>Select Sex</option>
+                                        <input type="text" placeholder="Middle Name" id="middle-name" name="middle-name" required>
+                                    </div>
+                                    <div class="input-container">
+                                        <input type="text" placeholder="Date of Birth" id="date-of-birth" name="date-of-birth" readonly required>
+                                    </div>
+                                    <div class="input-container">
+                                        <select class="box" id="select-sex" name="select-sex" required>
+                                            <option value="" disabled selected>Gender</option>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
                                         </select>
-                                        <select style="margin-left: 0px;" class="box" id="select-civil-status" name="select-civil-status" required>
-                                            <option value="" disabled selected>Select Civil Status</option>
+                                    </div>
+                                    <div class="input-container">
+                                        <select class="box" id="select-civil-status" name="select-civil-status" required>
+                                            <option value="" disabled selected>Civil Status</option>
                                             <option value="single">Single</option>
                                             <option value="married">Married</option>
                                             <option value="divorced">Divorced</option>
@@ -567,8 +573,10 @@
                                         <p>Contact Information</p>
                                     </div>
                                     <div class="input-container">
-                                        <input style="margin-right: 5px;" type="email" placeholder="Email" id="email" name="email" required>
-                                        <input style="margin-left: 0px;" type="tel" placeholder="Phone Number" id="phone_number" name="phone_number" required>
+                                        <input type="email" placeholder="Email" id="email" name="email" required>
+                                    </div>
+                                    <div class="input-container">
+                                        <input type="tel" placeholder="Phone Number" id="phone_number" name="phone_number" required>
                                     </div>
 
                                 <!-- Address Details Section -->
@@ -576,15 +584,15 @@
                                         <p>Address Details</p>
                                     </div>
                                     <div class="input-container">
-                                        <select class="box" id="province" name="province" required>
-                                            <option value="" disabled selected>Select Province</option>
+                                        <select style="width: 87%" class="box" id="province" name="province" required>
+                                            <option value="" disabled selected>Province</option>
                                             <option value="Cavite">Cavite</option>
                                             <option value="Outside Cavite">Outside Cavite</option>
                                         </select>
                                     </div>
                                     <div class="input-container">
-                                        <select class="box" id="city" name="city" disabled required>
-                                            <option value="" disabled selected>Select City/Municipality</option>
+                                        <select style="width: 87%" class="box" id="city" name="city" disabled required>
+                                            <option value="" disabled selected>City/Municipality</option>
                                             <option value="Alfonso">Alfonso</option>
                                             <option value="Amadeo">Amadeo</option>
                                             <option value="Bacoor">Bacoor</option>
@@ -611,8 +619,8 @@
                                         </select>
                                     </div>
                                     <div class="input-container">
-                                        <select class="box" id="barangay" name="barangay" disabled required>
-                                            <option value="" disabled selected>Select Barangay</option>
+                                        <select style="width: 87%" class="box" id="barangay" name="barangay" disabled required>
+                                            <option value="" disabled selected>Barangay</option>
                                         </select>
                                     </div>        
                                     
@@ -621,7 +629,7 @@
                                         <p>Account Information</p>
                                     </div>
                                     <div class="input-container">
-                                        <input style="width: 45%" type="text" placeholder="Username" id="username" name="username" required>
+                                        <input style="width: 80%" type="text" placeholder="Username" id="username" name="username" required>
                                     </div>
                                     <div class="input-container">
                                         <input type="password" placeholder="Password" id="password" name="password" required>
