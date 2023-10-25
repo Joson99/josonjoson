@@ -292,7 +292,7 @@
         }
 
         .scrollable-form {
-            max-height: 200px; /* Adjust the height as needed */
+            max-height: 230px; /* Adjust the height as needed */
             overflow-y: auto; /* Add a vertical scrollbar if the content overflows */
         }
 
@@ -535,6 +535,20 @@
                 <div class="scrollable-form">
                     <div class="scrollable-content">
                         <form id="register-form">
+                                <!-- Account Information Section -->    
+                                <div class="text-inside-form">
+                                    <p>Account Information</p>
+                                </div>
+                                <div class="input-container">
+                                    <input style="width: 80%" type="text" placeholder="Username" id="username" name="username" required>
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" placeholder="Password" id="password" name="password" required>
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" placeholder="Confirm Password" id="confirm_password" name="confirm_password" required>
+                                </div>
+
                                 <!-- Personal Information Section -->
                                     <div class="text-inside-form">
                                         <p>Personal Information</p>
@@ -623,20 +637,6 @@
                                             <option value="" disabled selected>Barangay</option>
                                         </select>
                                     </div>        
-                                    
-                                <!-- Account Information Section -->    
-                                    <div class="text-inside-form">
-                                        <p>Account Information</p>
-                                    </div>
-                                    <div class="input-container">
-                                        <input style="width: 80%" type="text" placeholder="Username" id="username" name="username" required>
-                                    </div>
-                                    <div class="input-container">
-                                        <input type="password" placeholder="Password" id="password" name="password" required>
-                                    </div>
-                                    <div class="input-container">
-                                        <input type="password" placeholder="Confirm Password" id="confirm_password" name="confirm_password" required>
-                                    </div>
                         </form>
                     </div>
                 </div>
