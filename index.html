@@ -348,63 +348,6 @@
             font-size: 24px;
         }
 
-
-
-
-
-/* Style the Datepicker container */
-.ui-datepicker {
-        font-family: Arial, sans-serif;
-        background-color: #fff;
-        border: 1px solid #ccc;
-    }
-
-    /* Style the Datepicker header */
-    .ui-datepicker-header {
-        background-color: #00a4e4;
-        color: #fff;
-        border: none;
-    }
-
-    /* Style the Datepicker title */
-    .ui-datepicker-title {
-        color: #fff;
-    }
-
-    /* Style the Datepicker navigation buttons */
-    .ui-datepicker-prev, .ui-datepicker-next {
-        background-color: #00a4e4;
-        color: #fff;
-    }
-
-    /* Style the Datepicker days of the week */
-    .ui-datepicker th {
-        background-color: #00a4e4;
-        color: #fff;
-    }
-
-    /* Style the Datepicker days */
-    .ui-datepicker-calendar a {
-        color: #333;
-    }
-
-    /* Style the Datepicker selected date */
-    .ui-datepicker-calendar .ui-state-active {
-        background-color: #00a4e4;
-        color: #fff;
-    }
-
-    /* Style the Datepicker today's date */
-    .ui-datepicker-current-day {
-        background-color: #00a4e4;
-        color: #fff;
-    }
-
-
-
-
-
-
         /* Media Query for Responsive Navigation */
         @media screen and (max-width: 977px) {
             .nav-links {
@@ -573,7 +516,7 @@
                         </div>
                         <div class="input-container">
                             <input style="margin-right: 5px;" type="text" placeholder="Middle Name" id="middle-name" name="middle-name" required>
-                            <input style="margin-left: 0px;" type="text" placeholder="Date of Birth" id="date-of-birth" name="date-of-birth" required>
+                            <input style="margin-left: 0px;" type="date" placeholder="Date of Birth" id="date-of-birth" name="date-of-birth" required>
                         </div>
                         <div class="input-container">
                             <select style="margin-right: 5px;" class="box" id="select-sex" name="select-sex" required>
@@ -650,11 +593,6 @@
     </div>
 
 
-    <!-- Include jQuery and jQuery UI libraries -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     <script>
         // JavaScript for toggling the mobile menu
         const hamburger = document.querySelector('.hamburger');
@@ -721,29 +659,6 @@
                 behavior: 'smooth'
             });
         });
-
-
-
-        $(function() {
-            // Initialize the date picker for the date-of-birth input field
-            $("#date-of-birth").datepicker({
-                dateFormat: "mm/dd/yy",  // Define the date format
-                changeMonth: true,      // Allow changing the month
-                changeYear: true,       // Allow changing the year
-                yearRange: "-100:+0",   // Allow selecting from the past 100 years
-                showButtonPanel: true,  // Show the "Today" button
-                onClose: function(selectedDate) {
-                    // When the user selects a date, set the value of the input
-                    $("#date-of-birth").val(selectedDate);
-                }
-            });
-
-            // Prevent manual input in the date-of-birth field
-            $("#date-of-birth").on("keydown", function(e) {
-                e.preventDefault();
-            });
-        });
     </script>
-
 </body>
 </html>
